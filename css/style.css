@@ -106,24 +106,24 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /*Mobile*/
   .photo {
-    content: url(../23616754Pequena.jpg);
+    content: url(../23616754/23616754Pequena.jpg);
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /*Tablets*/
   .photo {
-    content: url(../23616754Pequena.jpg);
+    content: url(../23616754/23616754Pequena.jpg);
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /*Laptops and small screens*/
   .photo {
-    content: url(../23616754Grande.jpg);
+    content: url(../23616754/23616754Grande.jpg);
   }
 }
 @media screen and (min-width: 1025px) {
   /*Desktop*/
   .photo {
-    content: url(../23616754Grande.jpg);
+    content: url(../23616754/23616754Grande.jpg);
   }
 }
