@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.profile-container {
+  display: flex;
+  float: left;
+  flex-direction: row;
+}
+.profile-container > div > p > a:link {
+  color: orange;
+}
+.profile-container > div > p > a:visited {
+  color: red;
+}
+.profile-container > div > p > a:hover {
+  color: red;
+}
+.profile-container > div > p > a:active {
+  color: red;
+}
+.rounded-photo {
+  border-top-left-radius: 50px;
+}
+.profile-box {
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+.description {
+  font-family: Segoe UI;
+  font-style: italic;
+}
+.name {
+  color: blue;
+  font-size: 2rem;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-family: "Segoe UI";
+  text-align: center;
+  background-color: rgb(105, 175, 255);
+}
+.menuText {
+  color: white;
+  text-decoration: none;
+}
+.menuText:visited {
+  color: white;
+}
+.menuElement {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI";
+  font-size: 2rem;
+  background-color: rgb(105, 175, 255);
+}
+.menuNombre {
+  vertical-align: 50%;
+  font-size: 1rem;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.dummyList {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+  background-color: white;
+}
+.dummyProfile {
+  font-family: "Segoe UI";
+  text-align: center;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  color: rgb(105, 175, 255);
+}
+.dummyProfile:hover {
+  transform: rotate(15deg) scale(1.1);
+  background-color: #99c5dd;
+}
+.dummyPhoto {
+  margin-top: 10px;
+  height: 10rem;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /*Mobile*/
+  .photo {
+    content: url(../23616754Pequena.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /*Tablets*/
+  .photo {
+    content: url(../23616754Pequena.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*Laptops and small screens*/
+  .photo {
+    content: url(../23616754Grande.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  /*Desktop*/
+  .photo {
+    content: url(../23616754Grande.jpg);
+  }
+}
