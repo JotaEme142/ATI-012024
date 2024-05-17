@@ -1,5 +1,6 @@
 window.onload = function () {
     buildMenu();
+    buildList();
 };
 
 function buildMenu() {
@@ -21,6 +22,21 @@ function buildMenu() {
             </form></a>`;
             menu.appendChild(menuSearch);
         })
+}
 
+function buildList() {
+    fetch("../datos/index.json")
+        .then((respuesta) => respuesta.json())
+        .then((STUDENTS) => {
+            let list = document.getElementById("list");
+            STUDENTS.forEach((estudiante) => {
+                const estudianteActual = document.createElement("li");
+                estudianteActual.innerHTML += `
+                <img src="../${estudiante.imagen}"/></br>${estudiante.nombre}
+            `;
+                list.appendChild(estudianteActual);
+            });
+        })
+        .catch((error) => console.log("Hubor un error: " + error.message));
 }
 
