@@ -17,8 +17,8 @@ function buildMenu() {
             const menuSearch = document.createElement("li");
             menuSearch.innerHTML = `<a id="menuSearch" href="#">
             <form>
-              <input type="search" placeholder="Buscar" />
-              <button type="submit">Buscar</button>
+                <input type="search" placeholder="Buscar" />
+                <button type="submit">Buscar</button>
             </form></a>`;
             menu.appendChild(menuSearch);
         })
